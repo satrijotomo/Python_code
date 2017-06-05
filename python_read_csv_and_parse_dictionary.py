@@ -13,13 +13,14 @@ import csv
 DATADIR = ""
 DATAFILE = "beatles-diskography.csv"
 
+## without csv module
 def parse_file(datafile):
     data = []
     with open(datafile, "rb") as f:
         header = f.readline().split(',')
         count = 0
         for line in f:
-            if count == 10:
+            if count == 10: ## take the first 10 data
                 break
             
             fields = line.split(',')
@@ -31,6 +32,20 @@ def parse_file(datafile):
             data.append(entry)
             count = count + 1
 
+
+    return data
+
+## with csv module
+def parse_csv(datafile):
+    data = []
+    with open(datafile, "rb") as f:
+        reader = csv.DictReader(f)
+        count = 0
+        for line in reader: ## line is in dictionary format
+            if count == 10: ## take the first 10 data
+                break
+            data.append(line)
+            count = count + 1
 
     return data
 
