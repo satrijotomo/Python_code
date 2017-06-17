@@ -33,7 +33,7 @@ def get_authors(root):
             data['insr'].append(insr.get('iid'))
 
         authors.append(data)
-        print data
+        #print data
 
     return authors
 
