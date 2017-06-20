@@ -50,6 +50,8 @@ def test():
 
     root = get_root(article_file)
     data = get_authors(root)
+    
+    ## Test block below
 
     assert data[0] == solution[0]
     assert data[1]["insr"] == solution[1]["insr"]
