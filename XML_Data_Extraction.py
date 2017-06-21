@@ -5,6 +5,8 @@
 # The tags for first name, surname and email should map directly
 # to the dictionary keys, but you have to extract the attributes from the "insr" tag
 # and add them to the list for the dictionary key "insr"
+
+# Code is in Python 2
 import xml.etree.ElementTree as ET
 
 article_file = "exampleResearchArticle.xml"
