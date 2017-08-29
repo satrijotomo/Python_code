@@ -5,7 +5,7 @@
 After auditing is complete the next step is to prepare the data to be inserted into a SQL database.
 Running this script against the openmap XML will generate files: nodes.csv, nodes_tags.csv, ways.csv, 
 ways_nodes.csv and ways_tags.csv.
-These CSV files then can be used to load the data into SQL
+These CSV files then can be used to load the data into SQL (e.g. SQL lite) for further analysis.
 """
 
 import csv
