@@ -1,2 +1,3 @@
-# Python_code
-This repository is used to store useful python scripts and python tips.
+## Python Code
+This is the collection of useful python scripts and tips that I found useful and I use them as reference.
+
